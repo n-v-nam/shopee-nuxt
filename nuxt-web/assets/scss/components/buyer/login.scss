@@ -1,0 +1,37 @@
+$padding-default: 10%;
+
+#login-page {
+    .title-logo{
+        width: 100%;
+        padding-left: $padding-default;
+        .col{
+            padding: 0;
+        }
+    }
+    .form-login{
+        width: 80%;
+        margin-left: $padding-default;
+        .v-text-field .v-label{
+            top: 0px
+        }
+        .errors-form{
+            color: red;
+            font-size: 10px;
+        }
+        .v-text-field__details{
+            display: none
+        }
+    }
+    .action-login-other{
+        width: 90%;
+        padding-left: $padding-default;
+        .col{
+            padding: 0;
+            span{
+                color: #1877F2;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+#search{
+    .v-btn:not(.v-btn--round).v-size--default{
+        height: 32px;
+    }
+    .input-search{
+        input{
+            background-color: azure;
+            border-radius: 2px;
+            padding-left: 2px;
+            font-size: 12px;
+        }
+        .v-text-field__details{
+            display: none;
+        }
+    }
+    .list-search{
+        span{
+            font-size: 11px;
+            color: white;
+            font-family: $font-nav-default;
+            margin-right: 10px;
+        }
+    }
+}
