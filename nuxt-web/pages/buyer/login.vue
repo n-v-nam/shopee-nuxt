@@ -11,11 +11,7 @@
       </v-card-text>
       <div class="form-login">
         <form>
-          <v-text-field
-            v-model="login"
-            label="Email"
-            required
-          ></v-text-field>
+          <v-text-field v-model="email" label="Email" required></v-text-field>
           <v-text-field
             type="password"
             v-model="password"
@@ -30,7 +26,7 @@
       </div>
       <div class="flex justify-end action-login-other">
         <v-col>
-          <span>Forgot Password</span>
+          <span class="cursor-pointer" @click="$router.push('/forgot-password')">Forgot Password</span>
         </v-col>
         <v-col class="flex items-center justify-end">
           <span>Log in with SMS</span>
@@ -68,7 +64,10 @@
       <div class="text-sm flex justify-center mt-6">
         <div>
           <span class="text-gray-400">New to Shopee? </span>
-          <span class="text-[#FA5030] cursor-pointer hover:text-red-800 mx-1" @click="$router.push('/buyer/signup')">Sign Up</span
+          <span
+            class="text-[#FA5030] font-medium cursor-pointer hover:text-red-800 mx-1"
+            @click="$router.push('/buyer/signup')"
+            >Sign Up</span
           >
         </div>
       </div>
@@ -77,20 +76,27 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 export default {
   data() {
     return {
       checkbox: false,
-      login: null,
+      email: null,
       password: null
     };
   },
   methods:{
-    actionLogIn(){
-      console.log('Login')
+    ...mapActions({
+      login: 'buyer/login'
+    }),
+    async actionLogIn(){
+      await this.login({
+        email: this.email,
+        password: this.password
+      })
     }
   }
-};
+}
 </script>
 
 <style lang="scss">

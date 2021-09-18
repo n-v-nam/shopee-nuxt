@@ -9,7 +9,7 @@
       />
     </v-col>
     <v-col class="flex items-center" cols="6">
-      <span class="text-black text-xl font-bold relative left-[-80px]">{{
+      <span class="text-black text-xl font-semibold relative left-[-80px]">{{
         $route.name.toUpperCase().split('-').reverse()[0]
       }}</span>
     </v-col>

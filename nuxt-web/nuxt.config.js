@@ -24,7 +24,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/vee-validate.js', ssr: true }
+    {src: '~/plugins/vee-validate.js', ssr: true },
+    '@/plugins/ApiService',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -50,7 +51,9 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://127.0.0.1:8000/api'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

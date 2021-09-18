@@ -22,6 +22,15 @@ $padding-default: 10%;
             display: none
         }
     }
+    .connect-login{
+        .v-icon{
+            font-size: 22px;
+        }
+        span{
+            color: #fff;
+            margin-left: 4px;
+        }
+    }
     .action-login-other{
         width: 90%;
         padding-left: $padding-default;

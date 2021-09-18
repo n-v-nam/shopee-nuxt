@@ -34,22 +34,10 @@ $padding-default: 10%;
             }
         }
     }
-    .enter-code{
-        padding: auto;
+    .connect-login{
         span{
-            color: black
-        }
-        .input-verify-code{
-            display: flex;
-            justify-content: center;
-            margin-block: 70px;
-            input{
-                background-color: antiquewhite;
-                width: 80%;
-                height: 60px;
-                text-align: center;
-                font-size: 30px;
-            }
+            color: #fff
         }
     }
+    
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="layout-login" class="mt-8">
+  <div id="about-footer" class="mt-8">
     <v-row>
       <v-col class="flex justify-center">
         <v-list subheader>
@@ -71,14 +71,20 @@
         </v-list>
       </v-col>
     </v-row>
-    <v-divider class="my-8"/>
+    <v-divider class="my-8" />
     <v-row class="text-[12px]">
       <v-col cols="4" class="flex justify-center">
         <span>© 2021 Shopee. All Rights Reserved</span>
       </v-col>
       <v-col cols="8">
         <span>Country & Regio: </span>
-        <span v-for="(country,index) in countries" :key="country" class="cursor-pointer"> {{index != countries.length - 1 ? country + ' | ': country}} </span>
+        <span
+          v-for="(country, index) in countries"
+          :key="country"
+          class="cursor-pointer"
+        >
+          {{ index != countries.length - 1 ? country + " | " : country }}
+        </span>
       </v-col>
     </v-row>
   </div>
@@ -140,21 +146,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-span{
+$bg-color: #F5F5F5;
+#about-footer {
+  background-color: $bg-color;
+  span {
     color: black;
     opacity: 0.6;
-}
-.v-subheader {
-  font-size: 12px;
-  font-weight: bold;
-}
-.v-list-item {
-  min-height: 0px !important;
-  .v-list-item__content {
-    padding-block: 6px;
-    flex: unset !important;
-    .v-list-item__title {
-      font-size: 10px;
+  }
+  .v-subheader {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .v-sheet.v-list{
+    background-color: $bg-color;
+  }
+  .v-list-item {
+    min-height: 0px !important;
+    .v-list-item__content {
+      padding-block: 6px;
+      flex: unset !important;
+      .v-list-item__title {
+        font-size: 10px;
+      }
     }
   }
 }
