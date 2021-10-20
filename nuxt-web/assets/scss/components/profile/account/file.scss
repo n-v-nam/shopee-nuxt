@@ -1,0 +1,118 @@
+#account-file {
+  font-size: 14px;
+  padding: 30px;
+
+  .col,
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    color: #555555cc;
+  }
+
+  .file__info {
+    input {
+      border: 1px solid #DBDBDB;
+      display: block;
+      height: 40px;
+      width: 462px;
+      border-radius: 2px;
+      padding: 10px;
+    }
+
+    input[type=radio] {
+      border: 1px solid #DBDBDB;
+      display: inline;
+      height: 14px;
+      width: 14px;
+      position: relative;
+      bottom: -2px;
+    }
+
+    .file__username {
+      display: flex;
+      align-items: center;
+      margin-bottom: 48px;
+
+      .file__username--input {
+        padding-left: 20px;
+
+        span {
+          position: absolute;
+          opacity: 0.7;
+          font-weight: 300;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .file__name,
+    .file__email,
+    .file__phone,
+    .file__sex,
+    .file__shop,
+    .file__birthday {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .file__email--label,
+    .file__name--input,
+    .file__phone--input,
+    .file__shop--input,
+    .file__sex--select,
+    .file__birthday--input {
+      padding-left: 20px;
+    }
+
+  }
+
+  .file__avatar {
+    display: flex;
+    justify-content: center;
+
+    .file__avatar--container {
+      border-left: 1px solid #DBDBDB;
+      height: 200px;
+
+      .file__avatar--img {
+        width: 100px;
+        align-content: center;
+        margin: auto;
+
+        .v-image {
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      .file__avatar--bnt {
+        border: 1px solid #DBDBDB;
+        height: 40px;
+        width: 140px;
+        padding: 0 20px;
+        margin: 10px auto;
+      }
+
+      .file__avatar--require span {
+        margin: auto;
+      }
+    }
+  }
+
+  .account__file--save {
+    padding-left: calc(12.5% + 1.25rem);
+    margin-bottom: 3.75rem;
+
+    button {
+      width: 71px;
+      height: 40px;
+      background-color: $color-default;
+      color: #fff;
+      border-radius: 2px;
+    }
+  }
+}

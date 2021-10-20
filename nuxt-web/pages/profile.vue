@@ -1,22 +1,24 @@
 <template>
   <div id="profile-main">
-      <v-row class="flex items-start justify-evenly">
-          <v-col class="w-[180px]">
-              <Sidebar/>
-          </v-col>
-          <v-col class="w-[993px]">
-              
-          </v-col>
-      </v-row>
+      <div>
+        <Sidebar/>
+      </div>
+      <div class="body-profile">
+          <NuxtChild />
+      </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  validate(route) {
+    if (route.route.fullPath == "/profile" || route.route.fullPath == "/profile/account") {
+      route.redirect("/profile/account/info");
+    }
+    return true;
+  },
 }
 </script>
-
-<style>
-
+<style lang="scss">
+@import '@/assets/scss/components/profile/index.scss'
 </style>

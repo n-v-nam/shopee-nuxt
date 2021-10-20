@@ -1,13 +1,10 @@
 <template>
   <div id="home">
-    <div>
-      <Navbar/>
-    </div>
-    <div>
-      <Nuxt/>
-    </div>
-    <div>
-      <About/>
-    </div>
+    <NuxtChild />
   </div>
 </template>
+<script>
+export default {
+  layout: 'default'
+}
+</script>

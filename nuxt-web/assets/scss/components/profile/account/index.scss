@@ -1,0 +1,18 @@
+#profile-account{
+    .header-account{
+        margin: 18px 0;
+        border-bottom: 1px solid #DBDBDB;
+        .header-account__title{
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-transform: capitalize;
+            display: block;
+        }
+        .header-account__description{
+            font-size: 14px;
+            margin: 3px 0 0;
+        }
+    }
+}

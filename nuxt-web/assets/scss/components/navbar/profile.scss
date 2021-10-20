@@ -58,6 +58,8 @@
         justify-content: flex-start;
         padding-left: 6px;
         padding-block: 6px;
+        cursor: default;
+        user-select: none;
       }
 
       .list-notify {

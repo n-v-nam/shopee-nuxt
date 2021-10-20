@@ -47,7 +47,7 @@ export default {
 
   // middleware
   router:{
-    middleware: 'redirect'
+
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

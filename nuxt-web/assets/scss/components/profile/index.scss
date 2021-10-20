@@ -1,0 +1,15 @@
+#profile-main{
+    background-color: $background-default;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #f5f5f5;
+    .body-profile{
+        width: 993px !important;
+        background-color: #fff;
+        padding: 0 30px 10px;
+        min-height: 457px;
+    }
+}

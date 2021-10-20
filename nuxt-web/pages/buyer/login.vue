@@ -20,7 +20,7 @@
           ></v-text-field>
           <v-checkbox v-model="checkbox" label="Remember me?"></v-checkbox>
           <v-btn class="w-full" color="#E77730" @click="actionLogIn">
-            <span>LOG IN</span>
+            <span class="text-white">LOG IN</span>
           </v-btn>
         </form>
       </div>

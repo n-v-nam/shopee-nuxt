@@ -71,8 +71,8 @@
         </v-list>
       </v-col>
     </v-row>
-    <v-divider class="my-8" />
-    <v-row class="text-[12px]">
+    <v-divider class="opacity-50"/>
+    <v-row class="text-[12px] h-32 flex items-center">
       <v-col cols="4" class="flex justify-center">
         <span>© 2021 Shopee. All Rights Reserved</span>
       </v-col>
@@ -146,29 +146,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$bg-color: #F5F5F5;
-#about-footer {
-  background-color: $bg-color;
-  span {
-    color: black;
-    opacity: 0.6;
-  }
-  .v-subheader {
-    font-size: 12px;
-    font-weight: bold;
-  }
-  .v-sheet.v-list{
-    background-color: $bg-color;
-  }
-  .v-list-item {
-    min-height: 0px !important;
-    .v-list-item__content {
-      padding-block: 6px;
-      flex: unset !important;
-      .v-list-item__title {
-        font-size: 10px;
-      }
-    }
-  }
-}
+@import "@/assets/scss/components/footer.scss"
 </style>

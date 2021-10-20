@@ -47,7 +47,7 @@
     </div>
     <div v-if="username" class="relative cursor-pointer card-account">
       <div>
-        <div class="account mx-2" @click="$router.push('/buyer/profile')">
+        <div class="account mx-2" @click="$router.push('/profile')">
           <v-icon dark>mdi-account-circle-outline</v-icon>
           <span>{{ username }}</span>
         </div>

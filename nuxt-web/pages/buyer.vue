@@ -8,7 +8,13 @@
 
 <script>
 export default {
-  layout: "buyer"
+  layout: "buyer",
+  validate(route){
+    if(route.route.fullPath == '/buyer' || route.route.fullPath == '/buyer/') {
+      route.redirect('/buyer/login')
+    }
+    return true
+  }
 };
 </script>
 
